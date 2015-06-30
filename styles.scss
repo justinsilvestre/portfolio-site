@@ -31,22 +31,22 @@ i { font-style: italic; }
 	color: white;
 	color: rgba(255, 255, 255, .5);
 
-	#technical & { background-color: #001010; }
-	#creative & { background-color: #101000; }
-	#cultural & { background-color: #100010; }
+	#technical & { background-color: rgb(0, 20, 20); }
+	#creative & { background-color: rgb(20, 20, 0); }
+	#cultural & { background-color: rgb(20, 0, 20); }
 		
 }
 
 #technical {
-	background-color: #000010;
+	background-color: rgb(0, 0, 20);
 }
 
 #creative {
-	background-color: #001000;
+	background-color: rgb(0, 20, 0);
 }
 
 #cultural {
-	background-color: #100000;
+	background-color: rgb(20, 0, 0);
 }
 
 .full-color {
