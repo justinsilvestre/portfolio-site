@@ -1,0 +1,37 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Source Sans Pro';
+}
+#home-summary {
+
+}
+
+#home-summary h2 {
+	font-family: 'Raleway';
+	text-transform: lowercase;
+	font-weight: 200;
+	font-size: 5em;
+	padding-top: .3em;
+}
+#home-summary > div {
+	padding-left: 10%;
+}
+#home-summary .expand {
+	min-height: 1em;
+}
+
+#technical {
+	background-color: #000010;
+}
+#technical .expand { background-color: #001010; }
+
+#creative {
+	background-color: #001000;
+}
+#creative .expand { background-color: #101000; }
+
+#cultural {
+	background-color: #100000;
+}
+#cultural .expand { background-color: #100010; }

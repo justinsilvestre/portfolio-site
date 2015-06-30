@@ -1,0 +1,63 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Source Sans Pro';
+}
+i { font-style: italic; }
+
+#home-summary {
+	background-color: white;
+
+	h2 {
+		font-family: 'Raleway';
+		text-transform: lowercase;
+		font-weight: 200;
+		font-size: 5em;
+		padding-top: .3em;
+	}
+
+	& > div {
+		padding-left: 10%;
+	}
+
+}
+
+
+.expand {
+	padding-top: 1em;
+	padding-left: 1em;
+	overflow: hidden;
+
+	color: white;
+	color: rgba(255, 255, 255, .5);
+
+	#technical & { background-color: #001010; }
+	#creative & { background-color: #101000; }
+	#cultural & { background-color: #100010; }
+		
+}
+
+#technical {
+	background-color: #000010;
+}
+
+#creative {
+	background-color: #001000;
+}
+
+#cultural {
+	background-color: #100000;
+}
+
+.full-color {
+	height: 3px !important;
+	opacity: 0;
+		#technical & { background-color: #00FFFF !important; }
+	#creative & { background-color: #FFFF00 !important; }
+	#cultural & { background-color: #FF00FF !important; }
+}
+
+
+#end {
+	background-color: black;
+}
