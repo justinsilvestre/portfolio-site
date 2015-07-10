@@ -1,4 +1,75 @@
-$(function() {
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Justin Silvestre - Web Developer</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="styles.css">
+
+
+
+<style type="text/css">
+	
+</style>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="../JS/colorscroll.js"></script>
+</head>
+
+<body>
+
+
+<div id="summary-static" class="summary">
+		<div id="begin">There are three assets every team needs.</div>
+		<div id="technical" class="color">
+			<h1>technical skill</h1>
+			<ul class="expand">
+				<li>Rails, Backbone, Foundation, Sass</li>
+				<li>A passion for object-oriented JavaScript and Ruby</li>
+			</ul>
+		</div>
+		<div id="creative" class="color">
+			<h1>creative eye</h1>
+			<div class="expand">
+				[sketchbook link]
+			</div>
+		</div>
+		<div id="cultural" class="color">
+			<h1>cultural savvy</h1>
+				<div class="expand">
+					Fluent and educated in English, French, and Spanish
+					<br>BA 2014 French and Spanish Literature, <i>cum laude</i> St. John's University
+				</div>	
+		</div>
+			<div id="end">
+		<p>Why look in three different places?</p>
+	</div>
+</div>
+<div id="summary-fixed" class="summary"></div>
+<div id="colors"></div>
+
+
+
+
+
+
+
+<script src="home.js"></script>
+<script>
+	$(function() {
 
 		var $technical = $('#technical');
 			$technical.data({up: false, originalHeight: $technical.height(), originalOffsetTop: $technical.offset().top})
@@ -7,7 +78,7 @@ $(function() {
 		var $cultural  = $('#cultural');
 			$cultural.data({up: false, originalHeight: $cultural.height(), originalOffsetTop: $cultural.offset().top})
 		function colorPosition2($el) {
-			return $el.data('originalOffsetTop') + .5 * $el.data('originalHeight');
+			return $el.data('originalOffsetTop') + .25 * $el.data('originalHeight');
 		}
 
 	  var colors = new colorScroll.Plot('#colors', 'backgroundColor', [
@@ -76,3 +147,7 @@ $(function() {
            moveExpandWhenShown($cultural.children('.expand'));
     }); 
 	});
+</script>
+</body>
+
+</html>
